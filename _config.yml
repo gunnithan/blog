@@ -1,0 +1,15 @@
+# Site settings
+title: nuxhub.com
+description: ""
+baseurl: ""
+url: ""
+tagline: Powered by Jekyll
+
+# Build settings
+markdown: kramdown
+kramdown:
+    auto_ids: false
+paginate: 4
+paginate_path: '/blog/page:num/'
+permalink: /blog/:title
+gems: [jekyll-paginate]
