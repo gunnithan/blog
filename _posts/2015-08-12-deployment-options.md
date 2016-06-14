@@ -15,8 +15,7 @@ One option for enhancing FTP deployment is to use a Git-integrated FTP client li
 > See my [About](/about/) page for details
 
 
-      here is some code
-
+    is this a pre tag?
 
       {% highlight bash %}
       $ rvm install 2.2.3
@@ -27,7 +26,7 @@ One option for enhancing FTP deployment is to use a Git-integrated FTP client li
 
 Speaking of Git, if you’re using it to source-control your site, you can set it up to push to your web server when it’s time for deployment. To do this you’ll need to set up a post-update hook on your remote server. You’ll also, of course, need Git installed on your server and SSH access. This method of deployment is a little more technical than others, so you’ll need to be comfortable with Git, the command line interface, and writing basic scripts. [Nicolas Gallagher wrote one of the best posts](http://nicolasgallagher.com/simple-git-deployment-strategy-for-static-sites/ "Git for static sites") on the subject that I’ve seen, though a quick Google search will return several articles detailing versions of this workflow.
 
-###Deployment Web Services
+### Deployment Web Services
 
 Several online services offer deployment workflows for apps and sites. Most offer tiers of services that range from free to monthly fees based on the size and number of sites you’ll be updating. While many of their services aren’t really necessary for smaller static sites, the convenience of having your deployment automated with a single click is pretty nice, and the extra features can come in handy as your site grows. Check out [Beanstalk](http://beanstalkapp.com/ "Beanstalk"), [DeployBot](http://deploybot.com/ "Deploybot"), [Netlify](https://www.netlify.com/ "Netlify") and [Travis CI](https://travis-ci.org/ "Travis CI") for a good idea of how these services work and if they’re right for you.
 
