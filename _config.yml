@@ -4,12 +4,13 @@ description: ""
 baseurl: ""
 url: ""
 tagline: Powered by Jekyll
+excerpt_separator: <!-- more -->
 
 # Build settings
 markdown: kramdown
 kramdown:
     auto_ids: false
-paginate: 4
+paginate: 5
 paginate_path: '/blog/page:num/'
 permalink: /blog/:title
 gems: [jekyll-paginate]

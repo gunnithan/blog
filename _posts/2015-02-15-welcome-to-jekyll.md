@@ -5,7 +5,9 @@ date:   2015-02-15
 tags: [jekyll, web design, blogging, yaml, liquid]
 ---
 
-Welcome to the companion site for the [lynda.com](http://www.lynda.com "lynda.com") course *Jekyll for Web Designers*. This course is designed to present Jekyll to web designers in a clear, concise way. In this post we’ll take a quick look at how Jekyll works, and whether it’s right for you. 
+!["img"](http://placehold.it/900x300){: .img-responsive}
+
+Welcome to the companion site for the [lynda.com](http://www.lynda.com "lynda.com") course *Jekyll for Web Designers*. This course is designed to present Jekyll to web designers in a clear, concise way. In this post we’ll take a quick look at how Jekyll works, and whether it’s right for you.
 
 [Jekyll][1] bills itself as “a simple, blog-aware, static site generator.” It takes source files like templates, stylesheets, includes, and posts and uses them to generate a website that can then be hosted on your server of choice. This means that the entire website is generated at once, and visitors are simply served static files. This can be much faster than blogging platforms like WordPress, which use a CMS to generate pages as they’re requested. [This blog]({{site.baseurl}}/index.html "articles"), for example, was generated from a series of templates, posts, html snippets, and CSS using Jekyll.
 
@@ -21,17 +23,17 @@ Jekyll is a Ruby-based parsing engine that uses [YAML](http://yaml.org/ "YAML"),
 A simple Jekyll directory looks like this:
 
 ~~~~~~~
-├── _config.yml 
-├── _includes 
-|   ├── footer.html 
-|   └── header.html 
-├── _layouts 
-|   ├── default.html 
-|   └── post.html 
-├── _posts 
-|   ├── 2015-07-29-my-second-post.md 
+├── _config.yml
+├── _includes
+|   ├── footer.html
+|   └── header.html
+├── _layouts
+|   ├── default.html
+|   └── post.html
+├── _posts
+|   ├── 2015-07-29-my-second-post.md
 |   └── 2015-06-15-my-first-post.md
-├──css 
+├──css
 |   ├── main.css  
 ├── _site  
 └── index.html
@@ -57,7 +59,7 @@ This tells Jekyll to use the “post” template to assemble the page, and assig
 
 ###Is Jekyll right for you?
 
-Jekyll isn’t right for every designer, or every project. It’s perfect for smaller sites, blogs, portfolios, and project wikis, but might not be right for corporate sites or sites that require advanced functionality and heavy database usage. 
+Jekyll isn’t right for every designer, or every project. It’s perfect for smaller sites, blogs, portfolios, and project wikis, but might not be right for corporate sites or sites that require advanced functionality and heavy database usage.
 
 Here are a few things to consider when considering Jekyll:
 
@@ -71,7 +73,7 @@ Here are a few things to consider when considering Jekyll:
 
 **Data requirements.** Working with data in Jekyll is fairly basic. Data is typically stored in a YAML file in a fashion similar to JSON and referenced using Liquid tags. Advanced data requirements can be tricky and require a fair amount of extra work. If you need database functionality, or make heavy use of user data Jekyll might not be the best choice for you.
 
-**Extensibility.** Jekyll’s community is only a fraction of the size of WordPress or other CMS communities. As such, there aren’t as many plugins or add-ons for Jekyll as there are for other platforms. In many cases if you want to add functionality not included in the default jekyll build you’ll need to do it yourself. For security reasons Github Pages doesn’t allow plugins, so if you want to add plugins to a Github hosted site you’ll need to do some pretty painful workarounds. 
+**Extensibility.** Jekyll’s community is only a fraction of the size of WordPress or other CMS communities. As such, there aren’t as many plugins or add-ons for Jekyll as there are for other platforms. In many cases if you want to add functionality not included in the default jekyll build you’ll need to do it yourself. For security reasons Github Pages doesn’t allow plugins, so if you want to add plugins to a Github hosted site you’ll need to do some pretty painful workarounds.
 
 I highly recommend checking out Jekyll and giving it a try, it might just be the tool you’re looking for. For a high-level view of Jekyll check out Tom Preston-Werner’s [post announcing the creation of Jekyll](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html "blog like a hacker"). It will give you a better understanding of the philosophy behind Jekyll and how it works. To dig deeper into Jekyll check out the [Jekyll project page][1] and [documentation][2].
 

@@ -4,6 +4,8 @@ title:  "Configuration Options"
 date:   2015-05-14
 tags: [jekyll, yaml, markdown]
 ---
+!["img"](http://placehold.it/900x300){: .img-responsive}
+
 One of the main reasons to use a static site generator like Jekyll is the automation it provides for repetitive tasks and page generation. In Jekyll many of those automations are driven by the configuration file **_config.yml**. In order to harness the true power of Jekyll it’s important to understand how this file works and what your options are when using it.
 
 The **_config.yml** sits in the root of your source directory and, as the name suggests, controls the configuration options for your site. Let’s break down the options in the sample **_config.yml** that’s created when you generate a new Jekyll site before moving on to covering the Global config options.

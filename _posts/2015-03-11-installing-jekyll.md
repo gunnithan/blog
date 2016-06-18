@@ -4,6 +4,8 @@ title:  "Installing Jekyll"
 date:   2015-03-11
 tags: [jekyll, web design, terminal]
 ---
+!["img"](http://placehold.it/900x300){: .img-responsive}
+
 Getting started with Jekyll is relatively simple, although perhaps not *quite* as simple as their documentation would have you believe. There are a number of dependencies and requirements you have to satisfy before installing and using Jekyll. Let’s explore those dependencies and talk about the process of getting started with Jekyll.
 
 First, let’s cover what you’ll need to have installed before you can run Jekyll. As Jekyll is a Ruby app it helps if you’re on a Unix, Linux, or OS X system. According to Jekyll you *can* get Jekyll to run on Windows, it just requires some work. I’ve never tried it, but [you can read more about the process here](http://jekyll-windows.juthilo.com/ "jekyll for windows") if you’re interested.
@@ -20,7 +22,7 @@ If you’re on a Mac you’ll also need [Xcode Command Line Tools](https://devel
 $ gcc
 {% endhighlight %}
 
-GCC is a compiler command, and requires Command Line Tools to work, so if they’re not installed OSX will prompt you to install it. For Mavericks or earlier you’ll need to manually download Xcode from Apple and select the “Install Command Line Tools” option when installing it. 
+GCC is a compiler command, and requires Command Line Tools to work, so if they’re not installed OSX will prompt you to install it. For Mavericks or earlier you’ll need to manually download Xcode from Apple and select the “Install Command Line Tools” option when installing it.
 
 By now you’ve probably noticed that you’ll be spending a good bit of time in Terminal or in the command line when installing and using Jekyll. If you’re already comfortable with Terminal that shouldn’t really be a problem for you. Some of you, however, are probably pretty nervous at the thought of having to spend that much time in the command line. I totally understand if you fit into that category, I’m not that comfortable myself. The first time I tried to install Jekyll I had a terrible time getting my dependencies set up. In the end it had more to do with the version of OSX I was using, but it was a longer process than I was prepared for. Here’s my Twitter stream during that time:
 
@@ -31,7 +33,7 @@ Just be prepared to spend some time getting everything set up, and don’t get d
 Once all your dependencies are installed you’re ready to install Jekyll. For the most part it’s very straightforward, all you’ll need to do is type the following at the command line prompt:
 
 {% highlight bash %}
-$ gem install jekyll 
+$ gem install jekyll
 {% endhighlight %}
 
 If you run into permission issues, add 'sudo' before **gem** and that should do the trick. If you’re planning on using Github Pages to deploy and host your site, you might want to ensure you’re using the same version of Jekyll and Liquid as Github Pages. You can check those version numbers on the [Github Pages Gem repository](https://github.com/github/pages-gem/blob/master/lib/github-pages.rb "Github Pages"). To do version specific installs you’d do the following:

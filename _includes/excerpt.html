@@ -1,0 +1,10 @@
+<h2> <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a> </h2>
+<p>Girish Unnithan
+<span class="glyphicon glyphicon-time"></span> <time itemprop="dateCreated" datetime="{{post.date}}">{{ post.date | date: "%B %-d, %Y" }}</time></p>
+<hr>
+
+<p>{{ post.excerpt }}</p>
+
+<a class="btn btn-primary" href="{{site.baseurl}}{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+<hr>

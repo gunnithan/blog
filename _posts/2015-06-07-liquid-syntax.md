@@ -4,9 +4,11 @@ title:  "Liquid Syntax Basics"
 date:   2015-06-07
 tags: [liquid, jekyll, templates]
 ---
+!["img"](http://placehold.it/900x300){: .img-responsive}
+
 Jekyll uses the [Liquid](http://liquidmarkup.org/ "liquid") template language to control the logic of templates and assemble pages dynamically. To get the most out of Jekyll, and to build effective templates you need to understand the basics of how Liquid works. In this post we’ll cover the basics of Liquid syntax so that as you begin to author templates, you’ll have a greater understanding of Jekyll’s capabilities and how Liquid can help you build more powerful sites.
 
-Liquid was created in 2006 as a Ruby template language for the ecommerce site [Shopify](https://docs.shopify.com/themes/liquid-documentation/basics "Shopify themes"). It remains an integral part of Shopify, but has been spun off for general use as well. 
+Liquid was created in 2006 as a Ruby template language for the ecommerce site [Shopify](https://docs.shopify.com/themes/liquid-documentation/basics "Shopify themes"). It remains an integral part of Shopify, but has been spun off for general use as well.
 
 Liquid uses a combination of **tags**, **objects**, and **filters** to load and format content. Within tags, logic can be applied to loop through objects, create variables, and apply conditional statements to control the building of content.
 
@@ -36,7 +38,7 @@ Here’s a filter in action:
 It’s also possible to use more than one filter at a time. Here are a few of the standard filters available in Liquid:
 
 * date - reformat a date
-* capitalize - capitalize words 
+* capitalize - capitalize words
 * downcase - convert a string to lowercase
 * upcase - convert a string to uppercase
 * first - get the first element of an array
@@ -47,8 +49,8 @@ It’s also possible to use more than one filter at a time. Here are a few of th
 * strip_html - strip html from string
 * strip_newlines - strip all newlines from string
 * replace - replace each occurrence
-* replace_first - replace the first occurrence 
-* remove - remove each occurrence 
+* replace_first - replace the first occurrence
+* remove - remove each occurrence
 * remove_first
 * truncate - truncate a string down to x characters.     
 * truncatewords - truncate a string down to x words
@@ -68,7 +70,7 @@ Liquid tags are functional, when applied they perform some type of action. They 
 {{"{% endif "}}%}
 {% endhighlight %}
 
-In this example Jekyll would check the current page title. If the value is “About” then the text “About this blog” will be written to the page. 
+In this example Jekyll would check the current page title. If the value is “About” then the text “About this blog” will be written to the page.
 
 Tags are organized in four distinct categories; Control Flow, Iteration, Theme, and Variables. Control Flow tags are used to apply conditional logic, such as **if/else** statements. Iteration tags allow you to loop through code and run code repeatedly. They contain tags like **for loops** and **cycles**. Theme tags are typically template-specific tags and allow you to output specific markup, add comments, control arrays, and handle pagination.
 
@@ -96,7 +98,7 @@ Loops over collections, executing code for as long as the conditions within the 
   {{"{% endif "}}%}
 {% endhighlight %}
 
-Allows the application of conditional logic within templates. In this example Jekyll would check to see if there are any posts older than the current one using the **paginator** object. If so, a link would be created to the previous posts. If not a message is created stating that there are no previous posts. There are many variations on the if/else statements syntax including `elseif`, `unless`, and `case` statements. 
+Allows the application of conditional logic within templates. In this example Jekyll would check to see if there are any posts older than the current one using the **paginator** object. If so, a link would be created to the previous posts. If not a message is created stating that there are no previous posts. There are many variations on the if/else statements syntax including `elseif`, `unless`, and `case` statements.
 
 ###includes
 
@@ -120,11 +122,9 @@ There are two main ways to assign variables using Liquid. The **assign** method 
       {{"{% for tag in site.tags "}}%}{{"{{ tag | first "}}}}
            {{"{% unless forloop.last "}}%},{{"{% endunless "}}%}
       {{"{% endfor "}}%}
-  {{"{% endcapture "}}%} 
+  {{"{% endcapture "}}%}
 {% endhighlight %}
 
 The **capture** method, shown above, captures the values inside of the opening and closing tags and stores it in a string. In the example shown Jekyll would loop through all tags in the site, pull each one out, and separate them with a comma. The resulting variable “site_tags” would contain a comma-separated list of all tags within the site.
 
 Tags give you the ability to create templates that generate dynamic templates using intelligent logic. For more information on them, and for a complete list of available tags, check out the [Liquid documentation](https://docs.shopify.com/themes/liquid-documentation/tags "tags documentation") on tags.
-
-

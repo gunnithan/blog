@@ -4,12 +4,14 @@ title:  "Markdown Basics"
 date:   2015-06-29
 tags: [jekyll, markdown, html]
 ---
+!["img"](http://placehold.it/900x300){: .img-responsive}
 
 In Jekyll, content for pages and posts can be written in either HTML or Markdown. Although there will be times that HTML is the more appropriate choice, Markdown provides a more natural writing environment that makes blogging easier and less of a chore. In this post we’ll examine how Jekyll uses Markdown and cover some basic Markdown syntax.
+<!-- more -->
 
 If you’ve never used it before, Markdown is a text-to-HTML converter that let’s you write text naturally in plain text format and then convert it to valid HTML. To learn more about it, read John Gruber’s post introducing Markdown on [Daring Fireball](http://daringfireball.net/projects/markdown/ "Introducing Markdown").
 
-Jekyll supports multiple Markdown rendering engines and allows you to specify which engine to use in the site’s configuration. Currently Jekyll supports [Kramdown](http://kramdown.gettalong.org/index.html "Kramdown"), [Redcarpet](https://github.com/vmg/redcarpet "Redcarpet"), and [RDiscount](http://dafoster.net/projects/rdiscount/ "Rdiscount"), although you’re free to use any rendering engine you have installed or even write your own! 
+Jekyll supports multiple Markdown rendering engines and allows you to specify which engine to use in the site’s configuration. Currently Jekyll supports [Kramdown](http://kramdown.gettalong.org/index.html "Kramdown"), [Redcarpet](https://github.com/vmg/redcarpet "Redcarpet"), and [RDiscount](http://dafoster.net/projects/rdiscount/ "Rdiscount"), although you’re free to use any rendering engine you have installed or even write your own!
 
 To specify a rendering engine, simply add this line to your **_config,yml** file:
 
@@ -69,7 +71,7 @@ Renders as:
 
 ###Headings
 
-There are multiple ways to format headings in Kramdown. The easiest is to preceed the heading with hash characters (**#**) equal to the heading level. An `h1` for example, would be written as `#heading 1`. 
+There are multiple ways to format headings in Kramdown. The easiest is to preceed the heading with hash characters (**#**) equal to the heading level. An `h1` for example, would be written as `#heading 1`.
 
 ~~~~~~~
 # This is a heading 1
@@ -89,7 +91,7 @@ Renders as:
 
 ###Blockquotes
 
-Blockquotes are formatted using the “greater than” character (**>**) at the start of the blockquote. Text inside a blockquote is wrapped with a paragraph. 
+Blockquotes are formatted using the “greater than” character (**>**) at the start of the blockquote. Text inside a blockquote is wrapped with a paragraph.
 
 ~~~~~~~
 > This is a blockquote.
@@ -134,7 +136,7 @@ Renders as:
 
 ###Block-level attributes
 
-Often you may wish to assign attributes to block-level elements. To do this, follow the element with a *block inline attribute list* (block IAL). A block IAL consists of a left curly brace, followed by a colon, the attribute definitions and a right curly brace. 
+Often you may wish to assign attributes to block-level elements. To do this, follow the element with a *block inline attribute list* (block IAL). A block IAL consists of a left curly brace, followed by a colon, the attribute definitions and a right curly brace.
 
 ~~~~~~~
 # Apply the class “main” to this heading
@@ -219,8 +221,3 @@ Renders as:
 As you can see, Markdown is simple to write, and once you’ve learned the basic formatting options, generating semantic HTML is fairly simple. One of the most powerful Markdown features is the ability to nest HTML directly inside a Markdown document. That way if you’re unable to use Markdown to get exactly the HTML you need, you can simply inject HTML into the document and then continue using Markdown.
 
 For more information on Kramdown and for a more complete reference, visit Kramdown’s [project page](http://kramdown.gettalong.org/index.html "Kramdown").
-
-
-
-
-
