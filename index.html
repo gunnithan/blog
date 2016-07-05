@@ -3,17 +3,25 @@ layout: default
 title: Home Page
 ---
 
+<!-- excerpts of 5 latest posts -->
 
 {% for post in paginator.posts limit:5 %}
+<h2> <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a> </h2>
 
-        {% include excerpt.html %}
+<p style="font-size:.8em; color:#666;">Girish Unnithan
+<span class="glyphicon glyphicon-time"></span> <time itemprop="dateCreated" datetime="{{post.date}}">{{ post.date | date: "%B %-d, %Y" }}</time></p>
+<hr>
+
+<p>{{ post.excerpt }}</p>
+
+<a class="btn btn-sm" href="{{site.baseurl}}{{ post.url }}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+<hr>
+
 
 {% endfor %}
 
-
-
-
-
+<!-- Older and Newer posts -->
 
 <div>
   <ul class="pager">

@@ -12,11 +12,13 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="{{ site.baseurl }}/css/font-awesome.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="canonical" href="{{ site.baseurl }}{{ page.url }}">
 
     <!-- Custom CSS -->
-    <link href="{{ site.baseurl }}/css/blog-home.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/css/main.css" rel="stylesheet">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,17 +35,9 @@
 
     {% include nav.html %}
     <!-- Page Content -->
+
+
     <div class="container">
-      <div class="row">
-
-        <div class="row">
-          <div class="col-md-12">
-              <div class="well text-center ">
-                  This is a well that is a great spot for a business tagline or phone number for easy access!
-              </div>
-          </div>
-        </div> <!-- end row -->
-
         <!-- Main Column -->
         <div class="col-md-8">
           {{content}}
@@ -55,20 +49,23 @@
         <!-- Message Well -->
 
         <hr>
+      </div>
+      <!-- /.container -->
 
         <!-- Footer -->
         <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; nuxhub.com 2016 | powered by jekyll | github hosted</p>
+
+            <div class="container-fluid">
+
+                <p></p>
+                <p>Copyright &copy; oxheygen Ltd 2016   |   Powered by jekyll </p>
                 </div>
                 <!-- /.col-lg-12 -->
-            </div>
+
             <!-- /.row -->
         </footer>
 
-    </div>
-    <!-- /.container -->
+
 
     <!-- jQuery -->
     <script src="{{site.baseurl}}/js/jquery.js"></script>

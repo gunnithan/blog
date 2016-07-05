@@ -1,10 +1,16 @@
 # Site settings
-title: nuxhub.com
+title: oxheygen
 description: ""
 baseurl: ""
 url: ""
-tagline: Powered by Jekyll
-excerpt_separator: <!-- more -->
+tagline: ""
+# excerpt_separator: <!-->
+
+# Social settings
+twitter_username:     gunnithan
+github_username:      gunnithan
+facebook_username:    girish.unnithan
+google_plus_username:     girish.u
 
 # Build settings
 markdown: kramdown
