@@ -44,6 +44,7 @@ h1{
   letter-spacing: 3px;
 }
 
+
 h1,h2,h3,h4,h5,h6 {
   color: #3A6073;
   font-weight: 900;
@@ -134,8 +135,8 @@ h2 a:hover {
 
   .pp {
     display: block;
-    padding-top: 5px;
-    font-size: 2.5em;
+    padding-top: 10px;
+    font-size: 3em;
     font-weight: 900;
     color: #ff500a;
     letter-spacing: 3px;
